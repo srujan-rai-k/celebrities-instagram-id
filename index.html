@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="SyMvXpzwMLpv-Cc6DIFSLyM-61_JRGFgfG6uXJhu2Hg" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="instagram.jpg">
     <script src="instagram.js"></script>
@@ -12,7 +12,7 @@
 </head>
 <body id="backimg">
 
-    <div class="topnav">
+    <div class="topnav" id="myTopnav">
         <a class="active" href="#home"><i class="fa fa-home"></i>Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -21,10 +21,8 @@
         <a href="#youtubers">Youtubers</a>
         <a href="#Singers">Singers</a>
         <a href="#Comedians">Comedians</a>
-        <div class="search-container">
-              <input  type="text" placeholder="Search.." name="search" onclick="myFunction()">
-              <button type="submit"><i class="fa fa-search"></i></button>
-          </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
       </div>
 
     <!--Celebrities Section-->
@@ -40,8 +38,6 @@
                 <li><a href="#kollywood">KOLLYWOOD</a></li>
                 <li><a href="#sandalwood">SANDALWOOD</a></li>
                 <li><a href="#tollywood">TOLLYWOOD</a></li>
-               
-               
             </ul>
         </nav>
 
@@ -1122,7 +1118,72 @@
         <a href="#" class="fa fa-instagram"></a>
     </footer>
 -->
-  
+    <div id="youtubers">
+        <div>
+            <h1 id="heading"><img src="logo2.png" width="50" height="50"/>Youtubers with their instagram id</h1>
+         </div>
+        <section>
+            <h1 class="tableheading">YOUTUBERS</h1>
+            <table id="table" width="1000" border="2" cellpadding="10">
+                <tr id="boxhead">    
+                    <th>IMAGE</th>
+                    <th>NAME</th>
+                    <th>YOUTUBE CHANNEL</th>
+                    <th>INSTA ID</th>
+                </tr>
+                <tr>
+                    <th class="image" id="amith"><img src="youtubers/amith.jpg"/></th>
+                    <th>AMIT BHADANA</th>
+                    <th><a href="https://www.youtube.com/Amit Bhadana/?hl=en" target="_blank" title="Click Here">Amit Bhadana</a></th>
+                    <th><a href="https://www.instagram.com/theamitbhadana/?hl=en" target="_blank" title="Click Here">@theamitbhadana</a></th>
+                </tr>
+                <tr>
+                    <th class="image" id="ashish"><img src="youtubers/ashish.jpg"/></th>
+                    <th>ASISH CHANCHLANI</th>
+                    <th><a href="https://www.youtube.com/ashish chanchlani vines/?hl=en" target="_blank" title="Click Here">@ashish chanchlani vines</a></th>
+                    <th><a href="https://www.instagram.com/ashishchanchlani/?hl=en" target="_blank" title="Click Here">@ashishchanchlani</a></th>
+                </tr>
+                <tr>
+                    <th class="image" id="beyounick"><img src="youtubers/beyounick.jpg"/></th>
+                    <th>NIKUNJ LOTIA</th>
+                    <th><a href="https://www.youtube.com/Be YouNick/?hl=en" target="_blank" title="Click Here">@Be YouNick</a></th>
+                    <th><a href="https://www.instagram.com/beyounick/?hl=en" target="_blank" title="Click Here">@beyounick</a></th>
+                </tr>
+                <tr>
+                    <th class="image" id="bhuvan"><img src="youtubers/bhuvan.jpg"/></th>
+                    <th>BHUVAN BAM</th>
+                    <th><a href="https://www.youtube.com/BB Ki Vines/?hl=en" target="_blank" title="Click Here">@BB Ki Vines</a></th>
+                    <th><a href="https://www.instagram.com/bhuvan.bam22/?hl=en" target="_blank" title="Click Here">@bhuvan.bam22</a></th>
+                </tr>
+                <tr>
+                    <th class="image" id="carryminati"><img src="youtubers/carryminati.jpg"/></th>
+                    <th>AJEY NAGAR</th>
+                    <th><a href="https://www.youtube.com/channel/UCj22tfcQrWG7EMEKS0qLeEg" target="_blank" title="Click Here">@CarryMinati</a></th>
+                    <th><a href="https://www.instagram.com/carryminati/?hl=en" target="_blank" title="Click Here">@carryminati</a></th>
+                </tr>
+                <tr>
+                    <th class="image" id=""><img src="youtubers/"/></th>
+                    <th></th>
+                    <th></th>
+                    <th><a href="" target="_blank" title="Click Here">@</a></th>
+                </tr>
+                <tr>
+                    <th class="image" id=""><img src="youtubers/"/></th>
+                    <th></th>
+                    <th></th>
+                    <th><a href="" target="_blank" title="Click Here">@</a></th>
+                </tr>
+                <tr>
+                    <th class="image" id=""><img src="youtubers/"/></th>
+                    <th></th>
+                    <th></th>
+                    <th><a href="" target="_blank" title="Click Here">@</a></th>
+                </tr>
+            </table>
+        </section> 
+    </div>
+        
+
   
 </body>
 </html>
