@@ -140,6 +140,12 @@ nav li a {
   margin-right: auto;
   background-color: rgb(140, 233, 131);
 }
+@media screen and (max-width :600px)
+{
+  #heading{
+    font-size: 25px;
+  }
+}
 #table{
   text-align: center;
   border: 2px solid;
