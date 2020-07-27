@@ -253,15 +253,9 @@ footer .fa-instagram {
   }
   #animation{
     position: relative;
-    animation: mymove 15s;
-    animation-iteration-count:infinite;
-    animation-fill-mode: backwards;
-    animation-timing-function: linear;
+    margin-top: 10px;
   }
-  @keyframes mymove {
-    from {left: 600px;}
-    to{left:-500px}
-  }
+ 
   .tableheading{
     display: block;
     padding-left: 0px;
