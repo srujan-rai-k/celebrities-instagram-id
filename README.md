@@ -1,1 +1,1 @@
-# celebrities-instagram-id
+# celebrities-insta-id
