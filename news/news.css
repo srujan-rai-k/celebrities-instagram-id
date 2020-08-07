@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) {
+    img{
+        width: 50%;
+        height: 50%;
+        border: 1px solid red;
+    }
+}
+@media screen and (min-width: 601px){
+    img{
+        width: 25%;
+        height: 25%;
+        border: 1px solid red;
+    }
+}
+marquee{
+    color: red;
+}
+h1{
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+span{
+    font-weight: 1000;
+}
