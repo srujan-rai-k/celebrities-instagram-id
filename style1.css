@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 }
 
-@media screen and (min-width: 300px){
+@media screen and (min-width: 634px){
 #animation{
   display: none;
 }
@@ -90,7 +90,7 @@ tr th a{
   display: block;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 634px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -100,7 +100,7 @@ tr th a{
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 634px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -233,7 +233,7 @@ footer .fa-instagram {
   color: white;
 }
 
-@media screen and (max-width: 300px)
+@media screen and (max-width: 634px)
 {
   .table{
     width: 50%;
