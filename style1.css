@@ -233,7 +233,7 @@ footer .fa-instagram {
   color: white;
 }
 
-@media screen and (max-width: 634px)
+@media screen and (max-width: 300px)
 {
   .table{
     width: 50%;
