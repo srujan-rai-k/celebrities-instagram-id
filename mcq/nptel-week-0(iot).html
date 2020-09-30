@@ -59,6 +59,672 @@
 <body>
 
 <h2>MCQ ON IOT UNIT-2 WEEK-0 by NPTEL</h2>
+  
+  
+  <div class="w3-main w3-light-grey" id="belowtopnav" style="margin-left: 220px; padding-top: 44px;">
+  <div class="w3-row w3-white">
+    <div class="w3-col l10 m12" id="main">
+      <div id="mainLeaderboard" style="overflow:hidden;">
+        <!-- MainLeaderboard-->
+
+        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
+        <div id="snhb-main_leaderboard-0" data-google-query-id="CNDkgu_FkOwCFSTRcwEdCrkBYA"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//main_leaderboard_2__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22152718/sws-hb//w3schools.com//main_leaderboard_2" title="3rd party ad content" name="google_ads_iframe_/22152718/sws-hb//w3schools.com//main_leaderboard_2" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="g" data-load-complete="true"></iframe></div></div>
+        <!-- adspace leaderboard -->
+       
+      </div>
+<h1>PHP <span class="color_h1">Error Handling</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="php_filter_advanced.asp">❮ Previous</a>
+<a class="w3-right w3-btn" href="php_exception.asp">Next ❯</a>
+</div>
+<hr>
+<p class="intro">Error handling in PHP is simple. An error message with filename, line 
+number and a message describing the error is sent to the browser.</p>
+<hr>
+
+<h2>PHP Error Handling</h2>
+<p>When creating scripts and web applications, error handling is an important 
+part. If your code lacks error checking code, your program may look very 
+unprofessional and you may be open to security risks.</p>
+<p>This tutorial contains some of the most common error checking methods in PHP.</p>
+<p>We will show different error handling methods:</p>
+<ul>
+  <li>Simple "die()" statements</li>
+  <li>Custom errors and error triggers</li>
+  <li>Error reporting</li>
+</ul>
+<hr>
+
+<h2>Basic Error Handling: Using the die() function</h2>
+<p>The first example shows a simple script that opens a text file:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>
+$file=fopen(<span class="phpstringcolor" style="color:brown">"mytestfile.txt"</span>,<span class="phpstringcolor" style="color:brown">"r"</span>);<br>
+<span class="phptagcolor" style="color:red">?&gt;</span></span>
+ </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="phptryit.asp?filename=tryphp_error1">Try it Yourself »</a>
+</div>
+
+<p>If the file does not exist you might get an error like this:</p>
+
+<div class="w3-code w3-border notranslate"><div>
+<b>Warning</b>: fopen(mytestfile.txt) [function.fopen]: failed to open stream:<br>
+No such file or directory in <b>C:\webfolder\test.php</b> on line <b>2</b>
+</div></div>
+
+<p>To prevent the user from getting an error message like the one above, we test whether 
+the file exist before we try to access it:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpnumbercolor" style="color:red">
+</span>  <span class="phpkeywordcolor" style="color:mediumblue">if</span>(file_exists(<span class="phpstringcolor" style="color:brown">"mytestfile.txt"</span>)) {<br>&nbsp; $file = fopen(<span class="phpstringcolor" style="color:brown">"mytestfile.txt"</span>, <span class="phpnumbercolor" style="color:red">
+</span>  <span class="phpstringcolor" style="color:brown">"r"</span>);<br>} <span class="phpkeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp; <span class="phpkeywordcolor" style="color:mediumblue">die</span>(<span class="phpstringcolor" style="color:brown">"Error: The file does not exist."</span>);<br>}<br><span class="phptagcolor" style="color:red">?&gt;</span></span>
+ </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="phptryit.asp?filename=tryphp_error2">Try it Yourself »</a>
+</div>
+
+<p>Now if the file does not exist you get an error like this:</p>
+
+<div class="w3-code w3-border notranslate"><div>
+Error: The file does not exist.
+</div></div>
+
+<p>The code above is more efficient than the earlier code, because it 
+uses a simple error handling mechanism to stop the script after the error.</p>
+<p>However, simply stopping the script is not always the right way to go. Let's take a 
+look at alternative PHP functions for handling errors.</p>
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+<!-- MidContent -->
+<!-- <p class="adtext">Advertisement</p> -->
+
+  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
+  <div id="snhb-mid_content-0" data-google-query-id="CPf42brFkOwCFd7kcwEd8BwPRQ"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_2__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_2" title="3rd party ad content" name="google_ads_iframe_/22152718/sws-hb//w3schools.com//mid_content_2" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="e" data-load-complete="true"></iframe></div></div>
+
+</div>
+<hr>
+<h2>Creating a Custom Error Handler</h2>
+<p>Creating a custom error handler is quite simple. We simply create a special 
+function that can be called when an error occurs in PHP.</p>
+<p>This function must be able to handle a minimum of two parameters (error 
+level and error message) but can accept up to five parameters (optionally: file, line-number, and the error context):</p>
+
+<h2>Syntax</h2>
+<div class="w3-code w3-border notranslate"><div>
+error_function(error_level,error_message,<br>
+error_file,error_line,error_context)
+</div></div>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+  <th style="width:20%">Parameter</th>
+  <th style="width:80%">Description</th>
+  </tr>
+  <tr>
+    <td>error_level</td>
+    <td>Required. Specifies the error report level for the  user-defined error. Must be a value number. See table below for possible  error report levels</td>
+  </tr>
+  <tr>
+    <td>error_message</td>
+    <td>Required. Specifies the error message for the user-defined error</td>
+  </tr>
+  <tr>
+    <td>error_file</td>
+    <td>Optional. Specifies the filename in which the error occurred</td>
+  </tr>
+  <tr>
+    <td>error_line</td>
+    <td>Optional. Specifies the line number in which the error occurred</td>
+  </tr>
+  <tr>
+    <td>error_context</td>
+    <td>Optional. Specifies an array containing every variable, and their values, in use when the error occurred</td>
+  </tr>
+</tbody></table>
+
+<h2>Error Report levels</h2>
+<p>These error report levels are the different types of error the user-defined error handler can be used for:</p>
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:5%">Value</th>
+    <th style="width:30%">Constant</th>
+    <th style="width:65%">Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>E_ERROR</td>
+    <td>A fatal run-time error. Execution of the script is stopped</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>E_WARNING</td>
+    <td>A non-fatal run-time error. Execution of the script is not stopped</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>E_NOTICE</td>
+    <td>A run-time notice. The script found something that might be an error, but could also happen when running a script normally</td>
+  </tr>
+  <tr>
+    <td>256</td>
+    <td>E_USER_ERROR</td>
+    <td>A fatal user-generated error. This is like an E_ERROR, except it is 
+    generated by the PHP script using the function trigger_error()</td>
+  </tr>
+  <tr>
+    <td>512</td>
+    <td>E_USER_WARNING</td>
+    <td>A non-fatal user-generated warning. This is like an E_WARNING, except it 
+    is generated by the PHP script using the function trigger_error()</td>
+  </tr>
+  <tr>
+    <td>1024</td>
+    <td>E_USER_NOTICE</td>
+    <td>A user-generated notice. This is like an E_NOTICE, except it is 
+    generated by the PHP script using the function trigger_error()</td>
+  </tr>
+  <tr>
+    <td>2048</td>
+    <td>E_STRICT</td>
+    <td>Not strictly an error.</td>
+  </tr>
+  <tr>
+    <td>8191</td>
+    <td>E_ALL</td>
+    <td>All errors and warnings (E_STRICT became a part of E_ALL in PHP 5.4)</td>
+  </tr>
+</tbody></table>
+</div>
+
+<p>Now lets create a function to handle errors:</p>
+<div class="w3-example">
+<div class="w3-code htmlHigh notranslate">
+function customError($errno, $errstr) {<br>
+&nbsp;&nbsp;echo "<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Error:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span> [$errno] $errstr<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span>";<br>
+&nbsp;&nbsp;echo "Ending Script";<br>
+&nbsp;&nbsp;die();<br>
+ }
+ </div></div>
+
+<p>The code above is a simple error handling function. When it is triggered, it 
+gets the error level and an error message. It then outputs the error level and 
+message and terminates the script.</p>
+<p>Now that we have created an error handling function we need to decide when it 
+should be triggered.</p>
+<hr>
+
+<h2>Set Error Handler</h2>
+<p>The default error handler for PHP is the built in error handler. We are 
+going to make the function above the default error handler for the duration of 
+the script.</p>
+<p>It is possible to change the error handler to apply for only some errors, 
+that way the script can handle different errors in different ways. However, in 
+this example we are going to use our custom error handler for all errors:</p>
+
+<div class="w3-code w3-border notranslate"><div>
+set_error_handler("customError");
+</div></div>
+
+<p>Since we want our custom function to handle all errors, the <code class="w3-codespan">set_error_handler()</code> 
+only needed one parameter, a second parameter could be added to specify an error level.</p>
+
+<h2>Example</h2>
+<p>Testing the error handler by trying to output variable that does not exist:</p>
+<div class="w3-example">
+<div class="w3-code htmlHigh notranslate">
+<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpnumbercolor" style="color:red">
+</span><span class="commentcolor" style="color:green">//error handler function<br></span>
+<span class="phpkeywordcolor" style="color:mediumblue">function</span> customError($errno, $errstr) {<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;&nbsp;<span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"&lt;b&gt;Error:&lt;/b&gt; [$errno] $errstr"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span> }<br><span class="phpnumbercolor" style="color:red">
+</span><br><span class="phpnumbercolor" style="color:red">
+</span><span class="commentcolor" style="color:green">//set error handler<br></span>
+set_error_handler(<span class="phpstringcolor" style="color:brown">"customError"</span>);<br><span class="phpnumbercolor" style="color:red">
+</span><br><span class="phpnumbercolor" style="color:red">
+</span><span class="commentcolor" style="color:green">//trigger error<br></span>
+<span class="phpkeywordcolor" style="color:mediumblue">echo</span>($test);<br>
+<span class="phptagcolor" style="color:red">?&gt;</span></span>
+ </div></div>
+
+<p>The output of the code above should be something like this:</p>
+<div class="w3-code w3-border notranslate"><div>
+<b>Error:</b> [8] Undefined variable: test
+</div></div>
+<hr>
+
+<h2>Trigger an Error</h2>
+<p>In a script where users can input data it is useful to trigger errors when an 
+illegal input occurs. In PHP, this is done by the <code class="w3-codespan">trigger_error()</code> function.</p>
+
+<h2>Example</h2>
+<p>In this example an error occurs if the "test" variable is bigger than "1":</p>
+<div class="w3-example">
+<div class="w3-code htmlHigh notranslate">
+<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br>
+$test=<span class="phpnumbercolor" style="color:red">2</span>;<br>
+<span class="phpkeywordcolor" style="color:mediumblue">if</span> ($test&gt;=<span class="phpnumbercolor" style="color:red">1</span>)<span class="phpnumbercolor" style="color:red">
+</span>{<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;
+trigger_error(<span class="phpstringcolor" style="color:brown">"Value must be 1 or below"</span>);<br><span class="phpnumbercolor" style="color:red">
+</span>}<br>
+<span class="phptagcolor" style="color:red">?&gt;</span></span>
+ </div></div>
+<p>The output of the code above should be something like this:</p>
+<div class="w3-code w3-border notranslate"><div>
+<b>Notice</b>: Value must be 1 or below<br>
+in <b>C:\webfolder\test.php</b> on line <b>6</b>
+</div></div>
+
+<p>An error can be triggered anywhere you wish in a script, and by adding a 
+second parameter, you can specify what error level is triggered.</p>
+<p>Possible error types:</p>
+<ul>
+  <li>E_USER_ERROR - Fatal user-generated run-time error. Errors that can not be recovered from. Execution of the script is halted </li>
+  <li>E_USER_WARNING - Non-fatal user-generated run-time warning. Execution of the script is not halted </li>
+  <li>E_USER_NOTICE - Default. User-generated run-time notice. The script found something that might be an error, but could also happen when running a script normally </li>
+</ul>
+
+<h2>Example</h2>
+<p>In this example an E_USER_WARNING occurs if the "test" variable is bigger 
+than "1". If an E_USER_WARNING occurs we will use our custom error handler and end the script:</p>
+<div class="w3-example">
+<div class="w3-code htmlHigh notranslate">
+<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpnumbercolor" style="color:red">
+</span><span class="commentcolor" style="color:green">//error handler function<br></span>
+<span class="phpkeywordcolor" style="color:mediumblue">function</span> customError($errno, $errstr)&nbsp;{<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;&nbsp;<span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"&lt;b&gt;Error:&lt;/b&gt; [$errno] $errstr&lt;br&gt;"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;&nbsp;<span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Ending Script"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;&nbsp;<span class="phpkeywordcolor" style="color:mediumblue">die</span>();<br><span class="phpnumbercolor" style="color:red">
+</span> }<br><span class="phpnumbercolor" style="color:red">
+</span><br><span class="phpnumbercolor" style="color:red">
+</span><span class="commentcolor" style="color:green">//set error handler<br></span>
+set_error_handler(<span class="phpstringcolor" style="color:brown">"customError"</span>,E_USER_WARNING);<br><span class="phpnumbercolor" style="color:red">
+</span><br><span class="phpnumbercolor" style="color:red">
+</span><span class="commentcolor" style="color:green">//trigger error<br></span>
+$test=<span class="phpnumbercolor" style="color:red">2</span>;<br>
+<span class="phpkeywordcolor" style="color:mediumblue">if</span> ($test&gt;=<span class="phpnumbercolor" style="color:red">1</span>)&nbsp;{<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;&nbsp;trigger_error(<span class="phpstringcolor" style="color:brown">"Value must be 1 or below"</span>,E_USER_WARNING);<br><span class="phpnumbercolor" style="color:red">
+</span> }<br>
+<span class="phptagcolor" style="color:red">?&gt;</span></span>
+ </div></div>
+
+<p>The output of the code above should be something like this:</p>
+<div class="w3-code w3-border notranslate"><div>
+<b>Error:</b> [512] Value must be 1 or below<br>
+Ending Script
+</div></div>
+<p>Now that we have learned to create our own errors and how to trigger them, 
+lets take a look at error logging.</p>
+<hr>
+
+<h2>Error Logging</h2>
+<p>By default, PHP sends an error log to the server's logging system or a file, 
+depending on how the error_log configuration is set in the php.ini file. By 
+using the <code class="w3-codespan">error_log()</code> function you can send error logs to a specified file or a remote destination.</p>
+<p>Sending error messages to yourself by e-mail can be a good way of getting notified of specific errors.</p>
+
+<h2>Send an Error Message by E-Mail</h2>
+<p>In the example below we will send an e-mail with an error message and end the 
+script, if a specific error occurs:</p>
+<div class="w3-example">
+<div class="w3-code htmlHigh notranslate">
+<span class="phpcolor" style="color:black"><span class="phptagcolor" style="color:red">&lt;?php</span><br><span class="phpnumbercolor" style="color:red">
+</span><span class="commentcolor" style="color:green">//error handler function<br></span>
+<span class="phpkeywordcolor" style="color:mediumblue">function</span> customError($errno, $errstr) {<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;&nbsp;<span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"&lt;b&gt;Error:&lt;/b&gt; [$errno] $errstr&lt;br&gt;"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;&nbsp;<span class="phpkeywordcolor" style="color:mediumblue">echo</span> <span class="phpstringcolor" style="color:brown">"Webmaster has been notified"</span>;<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;&nbsp;error_log(<span class="phpstringcolor" style="color:brown">"Error: [$errno] $errstr"</span>,<span class="phpnumbercolor" style="color:red">1</span>,<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;&nbsp;<span class="phpstringcolor" style="color:brown">"someone@example.com"</span>,<span class="phpstringcolor" style="color:brown">"From: webmaster@example.com"</span>);<br><span class="phpnumbercolor" style="color:red">
+</span> }<br><span class="phpnumbercolor" style="color:red">
+</span><br><span class="phpnumbercolor" style="color:red">
+</span><span class="commentcolor" style="color:green">//set error handler<br></span>
+set_error_handler(<span class="phpstringcolor" style="color:brown">"customError"</span>,E_USER_WARNING);<br><span class="phpnumbercolor" style="color:red">
+</span><br><span class="phpnumbercolor" style="color:red">
+</span><span class="commentcolor" style="color:green">//trigger error<br></span>
+$test=<span class="phpnumbercolor" style="color:red">2</span>;<br>
+<span class="phpkeywordcolor" style="color:mediumblue">if</span> ($test&gt;=<span class="phpnumbercolor" style="color:red">1</span>)&nbsp;{<br><span class="phpnumbercolor" style="color:red">
+</span>&nbsp;&nbsp;trigger_error(<span class="phpstringcolor" style="color:brown">"Value must be 1 or below"</span>,E_USER_WARNING);<br><span class="phpnumbercolor" style="color:red">
+</span> }<br>
+<span class="phptagcolor" style="color:red">?&gt;</span></span>
+ </div></div>
+
+<p>The output of the code above should be something like this:</p>
+<div class="w3-code w3-border notranslate"><div>
+<b>Error:</b> [512] Value must be 1 or below<br>
+Webmaster has been notified
+</div></div>
+
+<p>And the mail received from the code above looks like this:</p>
+<div class="w3-code w3-border notranslate"><div>
+Error: [512] Value must be 1 or below
+</div></div>
+<p>This should not be used with all errors. Regular errors should be logged on 
+the server using the default PHP logging system.</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="php_filter_advanced.asp">❮ Previous</a>
+<a class="w3-right w3-btn" href="php_exception.asp">Next ❯</a>
+</div>
+<div id="mypagediv2" style="position:relative;text-align:center;"></div>
+<br>
+
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+  <div id="skyscraper">
+  
+    <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
+    <div id="snhb-wide_skyscraper-0" style="min-height: 0px;" data-google-query-id="CMS727rFkOwCFd7kcwEd8BwPRQ"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//wide_skyscraper_2__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22152718/sws-hb//w3schools.com//wide_skyscraper_2" title="3rd party ad content" name="google_ads_iframe_/22152718/sws-hb//w3schools.com//wide_skyscraper_2" width="320" height="50" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="d" data-load-complete="true"></iframe></div></div>
+    <!-- adspace wide-->
+  
+  </div>
+</div>
+
+<div class="sidesection">
+<h4><a href="/colors/colors_picker.asp">COLOR PICKER</a></h4>
+<a href="/colors/colors_picker.asp">
+<img src="/images/colorpicker.gif" alt="colorpicker"></a>
+</div>
+
+<div class="sidesection" style="margin-left:auto;margin-right:auto;max-width:230px">
+<h4><a class="w3-button w3-green w3-block" href="https://shop.w3schools.com/" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px">SHOP</a></h4>
+</div>
+
+
+<div class="sidesection" id="moreAboutSubject">
+</div>
+
+<!--
+<div id="sidesection_exercise" class="sidesection" style="background-color:#555555;max-width:200px;margin:auto;margin-bottom:32px">
+  <div class="w3-container w3-text-white">
+    <h4>Exercises</h4>
+  </div>
+  <div>
+    <div class="w3-light-grey">
+      <a target="_blank" href="/html/exercise.asp" style="padding-top:8px">HTML</a>
+      <a target="_blank" href="/css/exercise.asp">CSS</a>
+      <a target="_blank" href="/js/exercise_js.asp">JavaScript</a>
+      <a target="_blank" href="/sql/exercise.asp">SQL</a>
+      <a target="_blank" href="/php/exercise.asp">PHP</a>
+      <a target="_blank" href="/python/exercise.asp">Python</a>
+      <a target="_blank" href="/bootstrap/exercise_bs3.asp">Bootstrap</a>
+      <a target="_blank" href="/jquery/exercise_jq.asp" style="padding-bottom:8px">jQuery</a>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="sidesection w3-light-grey" style="margin-left:auto;margin-right:auto;max-width:230px">
+  <div class="w3-container w3-dark-grey">
+    <h4><a href="/howto/default.asp" class="w3-hover-text-white">HOW TO</a></h4>
+  </div>
+  <div class="w3-container w3-left-align w3-padding-16">
+    <a href="/howto/howto_js_tabs.asp">Tabs</a><br>
+    <a href="/howto/howto_css_dropdown.asp">Dropdowns</a><br>
+    <a href="/howto/howto_js_accordion.asp">Accordions</a><br>
+    <a href="/howto/howto_js_sidenav.asp">Side Navigation</a><br>
+    <a href="/howto/howto_js_topnav.asp">Top Navigation</a><br>
+    <a href="/howto/howto_css_modals.asp">Modal Boxes</a><br>
+    <a href="/howto/howto_js_progressbar.asp">Progress Bars</a><br>
+    <a href="/howto/howto_css_parallax.asp">Parallax</a><br>
+    <a href="/howto/howto_css_login_form.asp">Login Form</a><br>
+    <a href="/howto/howto_html_include.asp">HTML Includes</a><br>
+    <a href="/howto/howto_google_maps.asp">Google Maps</a><br>
+    <a href="/howto/howto_js_rangeslider.asp">Range Sliders</a><br>
+    <a href="/howto/howto_css_tooltip.asp">Tooltips</a><br>
+    <a href="/howto/howto_js_slideshow.asp">Slideshow</a><br>
+    <a href="/howto/howto_js_filter_lists.asp">Filter List</a><br>
+    <a href="/howto/howto_js_sort_list.asp">Sort List</a><br>
+  </div>
+</div>
+
+<div class="sidesection">
+<h4>SHARE</h4>
+<div class="w3-text-grey sharethis" style="visibility: visible;">
+<script>
+<!--
+try{
+loc=location.pathname;
+if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+txt='<a href="http://www.facebook.com/sharer.php?u=https://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
+txt=txt+'<a href="https://twitter.com/home?status=Currently reading https://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
+document.write(txt);
+} catch(e) {}
+//-->
+</script><a href="http://www.facebook.com/sharer.php?u=https://www.w3schools.com/php/php_error.asp" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a><a href="https://twitter.com/home?status=Currently reading https://www.w3schools.com/php/php_error.asp" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>
+<br><br>
+<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+<span class="fa fa-thumbs-o-up fa-2x"></span></a>
+<div id="fblikeframe" class="w3-modal">
+<div class="w3-modal-content w3-padding-64 w3-animate-zoom" id="popupDIV"></div>
+</div>
+</div>
+</div>
+
+<div class="sidesection">
+<h4><a target="_blank" href="//www.w3schools.com/cert/default.asp">CERTIFICATES</a></h4>
+<p>
+<a href="/cert/cert_html.asp">HTML</a><br>
+<a href="/cert/cert_css.asp">CSS</a><br>
+<a href="/cert/cert_javascript.asp">JavaScript</a><br>
+<a href="/cert/cert_sql.asp">SQL</a><br>
+<a href="/cert/cert_python.asp">Python</a><br>
+<a href="/cert/cert_php.asp">PHP</a><br>
+<a href="/cert/cert_jquery.asp">jQuery</a><br>
+<a href="/cert/cert_bootstrap.asp">Bootstrap</a><br>
+<a href="/cert/cert_xml.asp">XML</a></p>
+<a href="//www.w3schools.com/cert/default.asp" class="w3-button w3-dark-grey" style="text-decoration:none">
+Read More »</a>
+</div>
+
+<div id="stickypos" class="sidesection" style="text-align: center; position: sticky; top: 50px;">
+  <div id="stickyadcontainer" style="width: 821.588px; top: 1942px;">
+    <div style="position:relative;margin:auto;">
+      
+      <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
+      <div id="snhb-sidebar_sticky-0" data-google-query-id="CMWK2LXFkOwCFa8MtwAdkBAGOA" style="display: none;"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//sidebar_sticky_0__container__" style="border: 0pt none; width: 160px; height: 600px;"></div></div>
+      <script>
+          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+            // adspace sticky
+            if (document.getElementById("snhb-mid_content-0")) {
+              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
+            }
+            else {
+              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
+            }
+          }
+          else {
+              if (document.getElementById("snhb-mid_content-0")) {
+                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
+              }
+          }
+      </script>  
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener("scroll", fix_stickyad);
+  window.addEventListener("resize", fix_stickyad);
+</script>
+
+</div>
+</div>
+<div id="footer" class="footer w3-container w3-white">
+
+<hr>
+
+<div style="overflow:auto">
+  <div class="bottomad">
+    <!-- BottomMediumRectangle -->
+    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
+    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;" data-google-query-id="CPj42brFkOwCFd7kcwEd8BwPRQ"><div id="google_ads_iframe_/22152718/sws-hb//w3schools.com//bottom_medium_rectangle_2__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22152718/sws-hb//w3schools.com//bottom_medium_rectangle_2" title="3rd party ad content" name="google_ads_iframe_/22152718/sws-hb//w3schools.com//bottom_medium_rectangle_2" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="f" data-load-complete="true"></iframe></div></div>
+    <!-- adspace bmr -->
+    <!-- RightBottomMediumRectangle -->
+    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
+    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  </div>
+</div>
+
+<hr>
+<div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
+<div class="w3-col l3 m3 s12">
+<a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">REPORT ERROR</a>
+</div>
+<!--
+<div class="w3-col l3 m3 s12">
+<a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" target="_blank" onclick="printPage();return false;" style="text-decoration:none;margin-top:1px;margin-bottom:1px">PRINT PAGE</a>
+</div>
+-->
+<div class="w3-col l3 m3 s12">
+<a class="w3-button w3-light-grey w3-block" href="/forum/default.asp" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px">FORUM</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a class="w3-button w3-light-grey w3-block" href="/about/default.asp" target="_top" style="text-decoration:none;margin-top:1px;margin-bottom:1px">ABOUT</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a class="w3-button w3-light-grey w3-block" href="https://shop.w3schools.com/" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px">SHOP</a>
+</div>
+
+</div>
+<hr>
+<div class="w3-light-grey w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-large">×</span>
+
+<h2>Report Error</h2>
+
+<p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:</p>
+<p>help@w3schools.com</p>
+<br>
+
+<!--
+<h2>Your Suggestion:</h2>
+<form>
+<div class="w3-section">      
+<label for="err_email">Your E-mail:</label>
+<input class="w3-input w3-border" type="text" style="margin-top:5px;width:100%" id="err_email" name="err_email">
+</div>
+<div class="w3-section">      
+<label for="err_email">Page address:</label>
+<input class="w3-input w3-border" type="text" style="width:100%;margin-top:5px" id="err_url" name="err_url" disabled="disabled">
+</div>
+<div class="w3-section">
+<label for="err_email">Description:</label>
+<textarea rows="10" class="w3-input w3-border" id="err_desc" name="err_desc" style="width:100%;margin-top:5px;resize:vertical;"></textarea>
+</div>
+<div class="form-group">        
+<button type="button" class="w3-button w3-dark-grey" onclick="sendErr()">Submit</button>
+</div>
+<br>
+</form>
+-->
+
+</div>
+<div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;position:relative">
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">×</span>     
+<h2>Thank You For Helping Us!</h2>
+<p>Your message has been sent to W3Schools.</p>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top Tutorials</h4>
+<a href="/html/default.asp">HTML Tutorial</a><br>
+<a href="/css/default.asp">CSS Tutorial</a><br>
+<a href="/js/default.asp">JavaScript Tutorial</a><br>
+<a href="/howto/default.asp">How To Tutorial</a><br>
+<a href="/sql/default.asp">SQL Tutorial</a><br>
+<a href="/python/default.asp">Python Tutorial</a><br>
+<a href="/w3css/default.asp">W3.CSS Tutorial</a><br>
+<a href="/bootstrap/bootstrap_ver.asp">Bootstrap Tutorial</a><br>
+<a href="/php/default.asp">PHP Tutorial</a><br>
+<a href="/jquery/default.asp">jQuery Tutorial</a><br>
+<a href="/java/default.asp">Java Tutorial</a><br>
+<a href="/cpp/default.asp">C++ Tutorial</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top References</h4>
+<a href="/tags/default.asp">HTML Reference</a><br>
+<a href="/cssref/default.asp">CSS Reference</a><br>
+<a href="/jsref/default.asp">JavaScript Reference</a><br>
+<a href="/sql/sql_ref_keywords.asp">SQL Reference</a><br>
+<a href="/python/python_reference.asp">Python Reference</a><br>
+<a href="/w3css/w3css_references.asp">W3.CSS Reference</a><br>
+<a href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap Reference</a><br>
+<a href="/php/php_ref_overview.asp">PHP Reference</a><br>
+<a href="/colors/colors_names.asp">HTML Colors</a><br>
+<a href="/jquery/jquery_ref_overview.asp">jQuery Reference</a><br>
+<a href="/java/java_ref_keywords.asp">Java Reference</a><br>
+<a href="/angular/angular_ref_directives.asp">Angular Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top Examples</h4>
+<a href="/html/html_examples.asp">HTML Examples</a><br>
+<a href="/css/css_examples.asp">CSS Examples</a><br>
+<a href="/js/js_examples.asp">JavaScript Examples</a><br>
+<a href="/howto/default.asp">How To Examples</a><br>
+<a href="/sql/sql_examples.asp">SQL Examples</a><br>
+<a href="/python/python_examples.asp">Python Examples</a><br>
+<a href="/w3css/w3css_examples.asp">W3.CSS Examples</a><br>
+<a href="/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a><br>
+<a href="/php/php_examples.asp">PHP Examples</a><br>
+<a href="/jquery/jquery_examples.asp">jQuery Examples</a><br>
+<a href="/java/java_examples.asp">Java Examples</a><br>
+<a href="/xml/xml_examples.asp">XML Examples</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Web Certificates</h4>
+<a href="/cert/default.asp">HTML Certificate</a><br>
+<a href="/cert/default.asp">CSS Certificate</a><br>
+<a href="/cert/default.asp">JavaScript Certificate</a><br>
+<a href="/cert/default.asp">SQL Certificate</a><br>
+<a href="/cert/default.asp">Python Certificate</a><br>
+<a href="/cert/default.asp">jQuery Certificate</a><br>
+<a href="/cert/default.asp">PHP Certificate</a><br>
+<a href="/cert/default.asp">Bootstrap Certificate</a><br>
+<a href="/cert/default.asp">XML Certificate</a><br>
+<a href="//www.w3schools.com/cert/default.asp" class="w3-button w3-margin-top w3-dark-grey" style="text-decoration:none">
+Get Certified »</a>
+
+</div>
+</div>        
+</div>        
+
+<hr>
+<div class="w3-center w3-small w3-opacity">
+W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our <a href="/about/about_copyright.asp">terms of use</a>,
+<a href="/about/about_privacy.asp">cookie and privacy policy</a>.
+<a href="/about/about_copyright.asp">Copyright 1999-2020</a> by Refsnes Data. All Rights Reserved.<br>
+ <a href="//www.w3schools.com/w3css/default.asp">Powered by W3.CSS</a>.<br><br>
+<a href="//www.w3schools.com">
+<img style="width:150px;height:28px;border:0" src="/images/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+</div>
+<br><br>
+</div>
+
+</div>
+  
+  
+  
+  
+  
 <div class="questions">
       <p><h4>1.An IoT Gateway is responsible for which of the following connectivity?<br></h4>
        <article class="options">
