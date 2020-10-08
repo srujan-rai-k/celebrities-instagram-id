@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Number Guessing Game</title> 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180181097-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180181097-1');
+</script>
+
+
+	<style> 
+	html { 
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+	} 
+	
+	body {
+		background-image: url(back.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin: 0 auto; 
+	} 
+	img{
+		width: 100%;
+		height: 720px;
+		
+	}
+	.centered {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: aquamarine;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		font-size: 30px;
+	}
+	input{
+		background-color: rgb(255, 115, 0);
+		border: solid 2px black;
+		height: 20px;
+	}
+	.guessSubmit{
+		background-color: rgb(223, 76, 22);
+		color: cyan;
+		height: 25px;
+	}
+	.guessField{
+		background-color: darkturquoise;
+	}
+	.reset{
+		height: 25px;
+	}
+
+	@media screen and (max-width: 900px){
+		.container{
+			font-size: unset;
+		}
+		.guessSubmit{
+			margin-top: 5px;
+			background-color: rgb(223, 76, 22);
+			color: cyan;
+		}
+		.reset{
+			margin-top: 5px;
+		}
+		.guessField{
+			margin-top: 5px;
+			background-color: darkturquoise;
+		}
+	}
+	
+
+	</style> 
+</head> 
+
+<body> 
+<div class="container">
+	<img src="back.jpg">
+	<div class="centered">
+		<h1>Guess The Number 🤔</h1> 
+
+		<p>We have selected a random number between 1 - 10. 
+		See if you can guess it.</p> 
+
+		<div class="form"> 
+			<label for="guessField">Enter a guess: </label> 
+			<input type = "text" id = "guessField" class = "guessField"> 
+			<input type = "submit" value = "Submit guess"
+				class = "guessSubmit" id = "submitguess"> 
+			<input type = "Reset" value = "Play Again"
+				class = "reset" id = "resetnum"> 
+		</div> 
+		<div>
+			<p id="display"></p>
+		</div>
+	</div>
+		
+</div>
+
+
+<script type = "text/javascript"> 
+
+	// random value generated 
+	var y = Math.floor(Math.random() * 10 + 1); 
+	
+	// counting the number of guesses 
+	// made for correct Guess 
+	var guess = 1; 
+	document.getElementById("resetnum").onclick = function(){
+		x=0;
+		document.getElementById("display").innerHTML = "You are ready to play"
+
+	}
+	
+document.getElementById("submitguess").onclick = function()
+{ 
+		 
+var x = document.getElementById("guessField").value; 
+
+  if(Number.isInteger(Number(x))==true)
+  	{
+
+		if(x>0 && x<=10)
+			{
+				if(x == y) 
+				{	 
+					document.getElementById("display").innerHTML = ("\nCONGRATULATIONS!!! 👏 YOU GUESSED IT RIGHT IN "
+							+ guess + " GUESS "); 
+				} 
+				else if(x > y) /* if guessed number is greater 
+								than actual number*/
+				{	 
+					guess++; 
+					document.getElementById("display").innerHTML = ("\nOOPS SORRY!! 😲 TRY A SMALLER NUMBER"); 
+				} 
+				else
+				{ 
+					guess++; 
+					document.getElementById("display").innerHTML = ("\nOOPS SORRY!! 😲 TRY A GREATER NUMBER") ;
+				}
+			}
+		else
+			{
+				document.getElementById("display").innerHTML = "\n Enter the number between the given range only!! Try again 😀"
+			} 
+ 	}
+  else
+  	{
+		document.getElementById("display").innerHTML = "I think you have entered something else!! Try again 😀"
+  	}
+
+
+} 
+</script> 
+</body> 
+</html>					 
