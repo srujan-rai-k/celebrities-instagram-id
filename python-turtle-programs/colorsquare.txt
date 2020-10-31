@@ -1,0 +1,23 @@
+import turtle
+import random
+t=turtle.Turtle()
+g=turtle.Turtle()
+y=turtle.Turtle()
+t.speed(0)
+g.speed(0)
+turtle.Screen().bgcolor('black')
+t.pensize(1)
+i=1
+y.forward(3000)
+for x in range(5):
+    for colors in ['red','magenta','blue','cyan','green','yellow','white']:
+        t.pencolor(colors)
+        g.pencolor(colors)
+        t.right(18)
+        for i in range(4):
+            t.forward(150)
+            t.left(90)
+        g.left(18)
+        g.circle(100)
+t.hideturtle()
+
