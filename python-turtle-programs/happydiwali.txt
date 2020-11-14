@@ -1,0 +1,128 @@
+import turtle
+wn=turtle.Screen().bgcolor("orange")
+t=turtle.Turtle()
+t.pensize(2)
+def pdraw():
+ t.right(90)
+ for _ in range(90):
+    t.forward(1)
+    t.right(2)
+def idraw():
+    t.forward(20)
+    t.backward(10)
+    t.right(90)
+    t.forward(100)
+    t.right(90)
+    t.forward(10)
+    t.backward(20)
+
+
+t.penup()
+t.goto(-500,0)
+t.pendown()
+t.left(90)
+t.forward(100)
+t.goto(-500,0)
+t.penup()
+t.right(90)
+t.forward(70)
+t.pendown()
+t.left(90)
+t.forward(100)
+t.backward(50) #h
+t.left(90)
+t.forward(70)
+
+t.penup()
+t.goto(-400,0)
+t.pendown()
+t.left(250)
+t.forward(110) #a
+t.right(140)
+t.forward(110)
+t.penup()
+t.goto(-385,40)
+t.pendown()
+t.left(70)
+t.forward(45)
+
+t.penup()
+t.goto(-300,0)
+t.pendown()
+t.left(90)
+t.forward(100)
+pdraw()
+t.penup()
+t.goto(-250,0)
+t.pendown()
+t.right(90)
+t.forward(100)
+pdraw()
+t.penup()
+t.goto(-180,0)
+t.pendown()
+t.right(90)
+t.forward(60)
+t.left(45)
+t.forward(50)
+t.backward(50)
+t.right(90)
+t.forward(50)
+t.penup()
+t.goto(-50,0)
+t.pendown()
+t.left(45)
+t.forward(100)
+t.right(90)
+for _ in range(180):
+    t.forward(.88)
+    t.right(1)
+
+t.penup()        #start
+t.goto(50,0)
+t.pendown()
+idraw()          #end
+
+t.penup()        #start
+t.goto(80,100)
+t.pendown()
+t.right(80)
+t.forward(95)
+t.left(130)
+t.forward(60)
+t.right(100)
+t.forward(60)
+t.left(130)
+t.forward(95)    #end
+
+t.penup()        #start
+t.goto(200,0)
+t.pendown()
+
+t.right(370)
+t.forward(110) #a
+t.right(140)
+t.forward(110)
+t.penup()
+t.goto(215,40)
+t.pendown()
+t.right(110)
+t.backward(45)
+
+t.penup()        #start
+t.goto(300,100)
+t.pendown()
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(50)
+
+t.penup()        #start
+t.goto(400,0)
+t.pendown()
+t.left(180)
+idraw()          #end
+
+
+
+
