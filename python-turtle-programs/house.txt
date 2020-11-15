@@ -1,0 +1,89 @@
+import turtle
+import math
+alex=turtle.Screen
+wn=turtle.Screen().bgcolor("black")
+t=turtle.Turtle()
+t.speed(18)
+t.penup()
+t.goto(-200,0)
+t.pendown()
+t.width(5)
+t.speed(1)
+t.color("white","orange")
+t.begin_fill()
+for _ in range(2):
+    t.forward(300)
+    t.left(90)          #rectangle
+    t.forward(170)
+    t.left(90)
+t.end_fill()
+
+t.forward(115)
+t.color("white","red")
+t.begin_fill()
+t.left(90)
+t.forward(90)
+t.right(90)             #Door
+t.forward(70)
+t.right(90)
+t.forward(90)
+t.end_fill()
+
+t.left(90)
+t.forward(115)
+t.left(90)
+t.forward(170)
+
+t.color("white","brown")
+t.begin_fill()
+t.left(45)              
+dist=math.sqrt(300*150)
+t.forward(dist)         #roof
+t.left(90)
+t.forward(dist)
+t.end_fill()
+
+t.penup()
+t.goto(-85,-2)
+t.pendown()
+t.color("brown","brown")
+t.begin_fill()              #road
+t.forward(400)
+t.left(135)         
+t.forward(70)
+t.left(45)
+t.forward(400)
+t.end_fill()
+
+def triangle():
+   for _ in range(3):
+        t.forward(90)
+        t.left(120)
+
+t.penup()
+t.goto(300,0)
+t.pendown()
+t.color("white","brown")
+t.begin_fill() 
+t.right(135)
+t.forward(70)
+t.left(90)
+t.forward(30)
+t.left(90)
+t.forward(70)
+t.end_fill()
+t.penup()
+t.goto(315,80)
+t.pendown()
+t.left(150)
+t.color("green","green")
+t.begin_fill() 
+triangle()
+t.goto(315,160)
+triangle()
+t.goto(315,240)
+triangle()
+t.end_fill()
+
+
+
